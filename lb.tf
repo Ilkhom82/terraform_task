@@ -1,7 +1,7 @@
 resource "aws_alb" "alb" {
   name            = "alb"
   security_groups = ["${aws_security_group.alb.id}"]
-  subnets         = ["${aws_subnet.subnet-public-1.id}", "${aws_subnet.subnet-public-2.id}"]
+  subnets         = ["${aws_subnet.subnet-public-1.id}", "${aws_subnet.subnet-public-2.id}", "${aws_subnet.subnet-public-3.id}"]
 
 
 
